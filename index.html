@@ -8,24 +8,40 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="container">
+<div class="container">
       <div class="row">
         <div class="col-8">
-          <form>
-            <label for="city" class="form-label"></label>
+          <form id="search-form">
             <input
-              type="cityText"
+              type="text"
               class="form-control"
-              id="cityName"
+              id="search-text-input"
               placeholder="Enter your City Here"
+              autocomplete="off"
+              autofocus="on"
             />
+            <button class="search-button" type="submit">Search</button>
+            <button
+              class="current-location-button"
+              type="submit"
+              id="current-location"
+            >
+              Current
+            </button>
           </form>
         </div>
-        <div class="col-4"><button class="search-button">Search</button></div>
+        <div class="float-left">
+          <h3 id="city-name"></h3>
+          <h5 id="current-date"></h5>
+          <div class="temperature-wrapper">
+            <span class="temperature" id="temperature"></span>
+            <span class="units">
+              <a href="#" class="celcius" id="celcius-link">°C</a> |
+              <a href="#" class="farenheit" id="farenheit-link">°F</a>
+            </span>
+          </div>
+        </div>
       </div>
-      <h3>Name of City Entered</h3>
-      <h4>Temperature of City Entered</h4>
-      <h5>Current Date</h5>
       <div class="row">
         <div class="col-8">
           <img
