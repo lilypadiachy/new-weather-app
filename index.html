@@ -5,15 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Git</title>
+    <title>Weather App</title>
   </head>
   <body>
-    <h1>Hello Git</h1>
-    <form>
-        <input type="email" placeholder="Enter your Email"/>
-        <input type="passowrd" placeholder="Enter your Password"/>
-        <input type="submit" value="Login"/>
-    </form>
-    <script src="script.js"></script>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <form>
+            <label for="city" class="form-label"></label>
+            <input
+              type="cityText"
+              class="form-control"
+              id="cityName"
+              placeholder="Enter your City Here"
+            />
+          </form>
+        </div>
+        <div class="col-4"><button class="search-button">Search</button></div>
+      </div>
+      <h3>Name of City Entered</h3>
+      <h4>Temperature of City Entered</h4>
+      <h5>Current Date</h5>
+      <div class="row">
+        <div class="col-8">
+          <img
+            src="images/weather.svg"
+            alt="weather-illustration"
+            class="weather-image"
+          />
+        </div>
+        <div class="col-4">
+          <div class="col-sm-3 col-md-6">
+            <h5 class="wind">Wind Speed</h5>
+            <p class="wind-speed">Wind Speed Value</p>
+          </div>
+          <div class="col-sm-3 col-md-6">
+            <h5 class="uv">UV</h5>
+            <p class="uv-index">UV Index Value</p>
+          </div>
+          <div class="col-sm-3 col-md-6">
+            <h5 class="feel">Feels Like</h5>
+            <p class="feels-like-value">Feels Like Value</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 col-lg-2">
+          <p class="day-name">Monday</p>
+          <img src="icon/wind.svg" class="weather-icon" alt="wind" />
+          <p>Temperature</p>
+        </div>
+        <div class="col-4 col-lg-2">
+          <p class="day-name">Tuesday</p>
+          <img src="icon/wind.svg" class="weather-icon" alt="wind" />
+          <p>Temperature</p>
+        </div>
+        <div class="col-4 col-lg-2">
+          <p class="day-name">Wednesday</p>
+          <img src="icon/wind.svg" class="weather-icon" alt="wind" />
+          <p>Temperature</p>
+        </div>
+        <div class="col-4 col-lg-2">
+          <p class="day-name">Thursday</p>
+          <img src="icon/wind.svg" class="weather-icon" alt="wind" />
+          <p>Temperature</p>
+        </div>
+        <div class="col-4 col-lg-2">
+          <p class="day-name">Friday</p>
+          <img src="icon/wind.svg" class="weather-icon" alt="wind" />
+          <p>Temperature</p>
+        </div>
+        <div class="col-4 col-lg-2">
+          <p class="day-name">Saturday</p>
+          <img src="icon/wind.svg" class="weather-icon" alt="wind" />
+          <p>Temperature</p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <footer>This Weather App is Coded with 🧁 by Lily</footer>
   </body>
 </html>

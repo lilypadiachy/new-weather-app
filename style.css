@@ -1,5 +1,42 @@
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    color: teal;
+.container {
+  max-width: 800px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 20px;
+ background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.col-4 {
+  padding-top: 4px;
+}
+.weather-image {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.search-button {
+  margin: 20px auto;
+  line-height: 3;
+  padding: 0 30px;
+  font-size: 13px;
+  color: white;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(90, 92, 106) 0%,
+    rgb(32, 45, 58) 81.3%
+  );
+  border-radius: 10px;
+  border: 1px solid #000;
+  border-color: white;
+}
+.day-name {
+        font-size: 20px;
+}
+.weather-icon {
+        max-width: 100px;
+}
+footer {
+        text-align: center;
+        font-family: monospace;
+        font-size: 10px;
+        margin: 5px;
 }
