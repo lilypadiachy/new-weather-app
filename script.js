@@ -27,7 +27,7 @@ function search(event) {
   let temperatureElement = document.querySelector("#temperature");
 
   if (searchInput.value) {
-    let apiKey = "b3a4489ba69b29805e86d4aac8b269f2";
+    let apiKey = "";
     let city = searchInput.value;
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
