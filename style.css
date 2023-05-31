@@ -4,7 +4,7 @@
   margin: 0 auto;
   margin-top: 10px;
   border-radius: 20px;
- background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 .col-4 {
   padding-top: 4px;
@@ -13,7 +13,31 @@
   max-width: 300px;
   margin: 0 auto;
 }
+.float-left {
+  float: left;
+}
+.temperature {
+  font-size: 4rem;
+  position: relative;
+}
+.celcius {
+  text-decoration: none;
+}
+.farenheit {
+  text-decoration: none;
+}
 .search-button {
+  margin: 20px auto;
+  line-height: 3;
+  padding: 0 30px;
+  font-size: 13px;
+  color: white;
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+  border-radius: 10px;
+  border: 1px solid #000;
+  border-color: white;
+}
+.current-location-button {
   margin: 20px auto;
   line-height: 3;
   padding: 0 30px;
@@ -29,14 +53,14 @@
   border-color: white;
 }
 .day-name {
-        font-size: 20px;
+  font-size: 20px;
 }
 .weather-icon {
-        max-width: 100px;
+  max-width: 100px;
 }
 footer {
-        text-align: center;
-        font-family: monospace;
-        font-size: 10px;
-        margin: 5px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 10px;
+  margin: 5px;
 }
