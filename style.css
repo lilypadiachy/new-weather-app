@@ -6,6 +6,13 @@
   border-radius: 20px;
   background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
+h4 {
+  font-size: small;
+  font-weight: 450;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
 .col-4 {
   padding-top: 4px;
 }
